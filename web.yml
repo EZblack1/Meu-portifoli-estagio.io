@@ -1,0 +1,28 @@
+            - nome: Carregar um artefato de construção
+  usos: ações/upload-artefato@v4.6.2
+  com:
+    # Nome do artefato
+    nome: # opcional, o padrão é artefato
+    # Um arquivo, diretório ou padrão curinga que descreve o que enviar
+    caminho:
+    # O comportamento desejado se nenhum arquivo for encontrado usando o caminho fornecido.
+Opções disponíveis:
+  avisar: emitir um aviso, mas não falhar na ação
+  erro: falha na ação com uma mensagem de erro
+  ignorar: Não emite nenhum aviso ou erro, a ação não falha
+
+    if-no-files-found: # opcional, o padrão é avisar
+    # Duração após a qual o artefato irá expirar em dias. 0 significa usar retenção padrão.
+Mínimo de 1 dia. Máximo de 90 dias, a menos que seja alterado na página de configurações do repositório.
+
+    dias de retenção: # opcional
+    # O nível de compactação do Zlib a ser aplicado ao arquivo de artefato. O valor pode variar de 0 a 9: - 0: Sem compactação - 1: Melhor velocidade - 6: Compactação padrão (igual ao GNU Gzip) - 9: Melhor compactação. Níveis mais altos resultarão em melhor compactação, mas levarão mais tempo para serem concluídos. Para arquivos grandes que não são facilmente compactados, um valor de 0 é recomendado para uploads significativamente mais rápidos.
+
+    nível de compressão: # opcional, o padrão é 6
+    # Se verdadeiro, um artefato com um nome correspondente será excluído antes que um novo seja carregado. Se falso, a ação falhará se um artefato com o nome fornecido já existir. Não falhará se o artefato não existir.
+
+    sobrescrever: # opcional, o padrão é falso
+    # Se verdadeiro, os arquivos ocultos serão incluídos no artefato. Se falso, os arquivos ocultos serão excluídos do artefato.
+
+    include-hidden-files: # opcional, o padrão é falso
+          
