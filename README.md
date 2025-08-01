@@ -6,7 +6,7 @@ O site foi criado em HTML, CSS e JavaScript, com galeria interativa de imagens u
 ## 🌐 Acesse o site
 Você pode acessar o portfólio publicado no GitHub Pages através do link:
 
-🔗 [https://seuusuario.github.io/nomedorepositorio/](https://seuusuario.github.io/nomedorepositorio/)
+🔗 [https://EZblack1.github.io/Meu.portifoli.io/](https://EZblack.github.io/Meu.portifoli.estagio.io/)
 
 ---
 
